@@ -1,7 +1,7 @@
 Object Types
 ============
 
-.. note:: Now being updated for Qgis2threejs version 2.0.
+.. note:: Now being updated for Qgis2threejs version 2.1.
 
 .. contents::
    :depth: 1
@@ -252,7 +252,7 @@ Tiles <http://portal.cyberjapan.jp/help/development/>`__ (ort, dem).
 Pipe
 ~~~~
 
-Places a cylinder to each line segment and a sphere to each point.
+Places a cylinder to each line segment and a sphere to each vertex.
 
 .. raw:: html
 
@@ -365,11 +365,7 @@ dem).
 Profile
 ~~~~~~~
 
-Makes a vertical plane under each line segment. When
-the altitude mode of z coordinate is ``Relative to DEM`` or
-``+ "field name"``, each linestring is split into segments using
-a triangle mesh generated from DEM and every upper edge is located
-at the relative height from the mesh surface.
+Makes a vertical plane under each line segment.
 
 .. raw:: html
 
@@ -448,11 +444,10 @@ Overlay
 ~~~~~~~
 
 Overlay polygon draped on the main DEM with specified color, border color and
-transparency. When the altitude mode of z coordinate is ``Relative to DEM`` or
-``+ "field name"``, each polygon is split into triangles using a triangle
-mesh generated from DEM, and is located at the relative height from
-the mesh surface. Otherwise, creates a flat polygon at a specified altitude.
-You can add side to each polygon if you want.
+transparency. When the altitude mode is ``Relative to DEM layer``, each polygon
+is split into triangles using a triangle mesh generated from the DEM, and is
+located at the relative height from the mesh surface. Otherwise, creates a flat
+polygon at a specified altitude.
 
 .. raw:: html
 

@@ -405,8 +405,8 @@ Export to Web Dialog
 
    Exporting starts when you press the Export button. When the exporting has
    been done and `Open exported page in web browser` option is checked, the
-   exported page is opened in default web browser (or a browser specified in
-   `Exporter Settings <#exporter-settings>`__).
+   exported page is opened in default web browser (or a web browser specified
+   in `Exporter Settings <#exporter-settings>`__).
 
 * Template
 
@@ -423,6 +423,7 @@ Export to Web Dialog
        opacity and add a horizontal plane movable in the vertical direction.
 
     * Mobile
+
        This is a template for mobile devices, which has mobile friendly GUI,
        device orientation controls and AR feature. In order to use the AR feature
        (Camera and GPS), you need to upload exported files to a web server
@@ -439,7 +440,7 @@ Exporter Settings
 
 .. image:: ./images/plugin_settings.png
 
-* Browser path
+* Web browser path
 
    If you want to open web page exported from the exporter with a web browser
    other than the default browser, enter the web browser path in this input box.
