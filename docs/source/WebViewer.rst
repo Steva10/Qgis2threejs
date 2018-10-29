@@ -1,7 +1,7 @@
 Web Viewer
 ==========
 
-.. note:: Now being updated for Qgis2threejs version 2.1.
+.. note:: Now being updated for coming Qgis2threejs version 2.2.
 
 Controls
 --------

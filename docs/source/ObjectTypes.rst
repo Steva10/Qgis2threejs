@@ -1,7 +1,7 @@
 Object Types
 ============
 
-.. note:: Now being updated for Qgis2threejs version 2.1.
+.. note:: Now being updated for coming Qgis2threejs version 2.2.
 
 .. contents::
    :depth: 1
@@ -15,7 +15,7 @@ Point Layer
 -----------
 
 `Sphere <#sphere>`__ \| `Cylinder <#cylinder>`__ \| `Cone <#cone>`__ \|
-`Box <#box>`__ \| `Disk <#disk>`__
+`Box <#box>`__ \| `Disk <#disk>`__ \| `Plane <#plane>`__
 
 
 .. index:: Sphere
@@ -46,7 +46,7 @@ Sphere with specified radius, color and transparency
 
 **three.js geometry class:**
 
-    `SphereGeoemtry <http://threejs.org/docs/#Reference/Extras.Geometries/SphereGeometry>`__
+    `SphereBufferGeoemtry <https://threejs.org/docs/#api/en/geometries/SphereBufferGeometry>`__
 
 .. raw:: html
 
@@ -83,7 +83,7 @@ Cylinder with specified radius, height, color and transparency
 
 **three.js geometry class:**
 
-    `CylinderGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/CylinderGeometry>`__
+    `CylinderBufferGeometry <https://threejs.org/docs/#api/en/geometries/CylinderBufferGeometry>`__
 
 .. raw:: html
 
@@ -120,7 +120,7 @@ Cone with specified radius, height, color and transparency
 
 **three.js geometry class:**
 
-    `CylinderGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/CylinderGeometry>`__
+    `CylinderBufferGeometry <https://threejs.org/docs/#api/en/geometries/CylinderBufferGeometry>`__
 
 .. raw:: html
 
@@ -159,7 +159,7 @@ Box with specified width, depth, height, color and transparency
 
 **three.js geometry class:**
 
-    `BoxGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/BoxGeometry>`__
+    `BoxBufferGeometry <https://threejs.org/docs/#api/en/geometries/BoxBufferGeometry>`__
 
 .. raw:: html
 
@@ -188,7 +188,7 @@ Disk with specified radius, orientation, color and transparency
 * Radius
     Numerical value.
 * Dip
-    In degrees. See `Strike and dip - Wikipedia <http://en.wikipedia.org/wiki/Strike_and_dip>`__.
+    In degrees. See `Strike and dip - Wikipedia <https://en.wikipedia.org/wiki/Strike_and_dip>`__.
 * Dip direction
     In degrees.
 
@@ -198,7 +198,48 @@ Disk with specified radius, orientation, color and transparency
 
 **three.js geometry class:**
 
-    `CylinderGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/CylinderGeometry>`__
+    `CircleBufferGeometry <https://threejs.org/docs/#api/en/geometries/CircleBufferGeometry>`__
+
+.. raw:: html
+
+   </td></tr></table>
+
+
+.. index:: Plane
+
+Plane
+~~~~~
+
+Plane with specified length, width, orientation, color and transparency
+
+.. raw:: html
+
+   <table><tr><td width="256">
+
+|image05|
+
+.. raw:: html
+
+   </td><td>
+
+**Specific settings** :
+
+* Width
+    Numerical value.
+* Length
+    Numerical value.
+* Dip
+    In degrees. See `Strike and dip - Wikipedia <https://en.wikipedia.org/wiki/Strike_and_dip>`__.
+* Dip direction
+    In degrees.
+
+**Origin** :
+
+    center of plane
+
+**three.js geometry class:**
+
+    `PlaneBufferGeometry <https://threejs.org/docs/#api/en/geometries/PlaneBufferGeometry>`__
 
 .. raw:: html
 
@@ -237,14 +278,14 @@ Line
 
 **three.js object class:**
 
-    `Line <http://threejs.org/docs/#Reference/Objects/Line>`__
+    `Line <https://threejs.org/docs/#api/en/objects/Line>`__
 
 .. raw:: html
 
    </td></tr></table>
 
 Image was created with `GSI
-Tiles <http://portal.cyberjapan.jp/help/development/>`__ (ort, dem).
+Tiles <https://maps.gsi.go.jp/development/ichiran.html>`__ (ort, dem).
 
 
 .. index:: Pipe
@@ -271,16 +312,16 @@ Places a cylinder to each line segment and a sphere to each vertex.
 
 **three.js geometry classes:**
 
-    `CylinderGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/CylinderGeometry>`__
+    `CylinderBufferGeometry <https://threejs.org/docs/#api/en/geometries/CylinderBufferGeometry>`__
     and
-    `SphereGeoemtry <http://threejs.org/docs/#Reference/Extras.Geometries/SphereGeometry>`__
+    `SphereBufferGeoemtry <https://threejs.org/docs/#api/en/geometries/SphereBufferGeometry>`__
 
 .. raw:: html
 
    </td></tr></table>
 
 Image was created with `GSI
-Tiles <http://portal.cyberjapan.jp/help/development/>`__ (airphoto,
+Tiles <https://maps.gsi.go.jp/development/ichiran.html>`__ (airphoto,
 dem).
 
 
@@ -309,14 +350,14 @@ direction.
 
 **three.js geometry class:**
 
-    `CylinderGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/CylinderGeometry>`__
+    `CylinderBufferGeometry <https://threejs.org/docs/#api/en/geometries/CylinderBufferGeometry>`__
 
 .. raw:: html
 
    </td></tr></table>
 
 Image was created with `GSI
-Tiles <http://portal.cyberjapan.jp/help/development/>`__ (ort, dem) and
+Tiles <https://maps.gsi.go.jp/development/ichiran.html>`__ (ort, dem) and
 `National Land Numerical Information <http://nlftp.mlit.go.jp/ksj/>`__
 (Rivers. MILT of Japan).
 
@@ -347,16 +388,16 @@ Places a box to each line segment.
 
 **three.js geometry class:**
 
-    `BoxGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/BoxGeometry>`__
+    `BoxGeometry <https://threejs.org/docs/#api/en/geometries/BoxGeometry>`__
     and
-    `Geometry <http://threejs.org/docs/#Reference/Core/Geometry>`__
+    `Geometry <https://threejs.org/docs/#api/en/core/Geometry>`__
 
 .. raw:: html
 
    </td></tr></table>
 
 Image was created with `GSI
-Tiles <http://portal.cyberjapan.jp/help/development/>`__ (airphoto,
+Tiles <https://maps.gsi.go.jp/development/ichiran.html>`__ (airphoto,
 dem).
 
 
@@ -384,7 +425,7 @@ Makes a vertical plane under each line segment.
 
 **three.js geometry class:**
 
-    `PlaneGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/PlaneGeometry>`__
+    `Geometry <https://threejs.org/docs/#api/en/core/Geometry>`__
 
 .. raw:: html
 
@@ -426,16 +467,16 @@ Extruded polygon with specified height, color and transparency
 
 **three.js geometry class:**
 
-    `ExtrudeGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/ExtrudeGeometry>`__
+    `ExtrudeBufferGeometry <https://threejs.org/docs/#api/en/geometries/ExtrudeBufferGeometry>`__
 
 .. raw:: html
 
    </td></tr></table>
 
 Image was created with `GSI
-Tiles <http://portal.cyberjapan.jp/help/development/>`__ (ort, dem) and
+Tiles <https://maps.gsi.go.jp/development/ichiran.html>`__ (ort, dem) and
 OpenStreetMap (© OpenStreetMap contributors,
-`License <http://www.openstreetmap.org/copyright>`__).
+`License <https://www.openstreetmap.org/copyright>`__).
 
 
 .. index:: Overlay
@@ -464,16 +505,13 @@ polygon at a specified altitude.
 
 **three.js classes:**
 
-    `Geometry <http://threejs.org/docs/#Reference/Core/Geometry>`__,
-    `Line <http://threejs.org/docs/#Reference/Objects/Line>`__
-    and
-    `PlaneGeometry <http://threejs.org/docs/#Reference/Extras.Geometries/PlaneGeometry>`__
+    `Geometry <https://threejs.org/docs/#api/en/core/Geometry>`__
 
 .. raw:: html
 
    </td></tr></table>
 
 Image was created with `GSI
-Tiles <http://portal.cyberjapan.jp/help/development/>`__ (ort, dem) and
+Tiles <https://maps.gsi.go.jp/development/ichiran.html>`__ (ort, dem) and
 `National Land Numerical Information <http://nlftp.mlit.go.jp/ksj/>`__
 (Sediment Disaster Hazard Area. Provided by Okayama prefecture, Japan).
