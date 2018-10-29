@@ -244,7 +244,7 @@ Material
 
       Textures the main DEM block with existing image file such as PNG file and JPEG file.
       TIFF is not supported by some browser. See `Image format
-      support <http://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support>`__
+      support <https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support>`__
       for details.
 
    * Solid color
