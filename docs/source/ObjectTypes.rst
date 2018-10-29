@@ -515,3 +515,37 @@ Image was created with `GSI
 Tiles <https://maps.gsi.go.jp/development/ichiran.html>`__ (ort, dem) and
 `National Land Numerical Information <http://nlftp.mlit.go.jp/ksj/>`__
 (Sediment Disaster Hazard Area. Provided by Okayama prefecture, Japan).
+
+
+.. index:: Triangular Mesh
+
+Triangular Mesh
+~~~~~~~~~~~~~~~
+
+[TODO]
+
+.. raw:: html
+
+   <table><tr><td width="256">
+
+|image22|
+
+.. raw:: html
+
+   </td><td>
+
+**Specific settings** :
+
+
+**three.js classes:**
+
+    `Geometry <https://threejs.org/docs/#api/en/core/Geometry>`__
+
+.. raw:: html
+
+   </td></tr></table>
+
+Image was created with `GSI
+Tiles <https://maps.gsi.go.jp/development/ichiran.html>`__ (ort, dem) and
+`National Land Numerical Information <http://nlftp.mlit.go.jp/ksj/>`__
+(Sediment Disaster Hazard Area. Provided by Okayama prefecture, Japan).

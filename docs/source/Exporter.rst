@@ -301,28 +301,28 @@ Common settings for all types:
 
 * Z coordinate
 
-    Specifies object altitude above zero-level or a DEM surface.
-
-    * Altitude
-
-        You can use a expression to specify altitude. The unit is that of the map CRS.
-        When Z value or M value is selected, the evaluated value is added to it.
-
-        * Z value
-        This item can be selected when the layer geometries have z coordinates and
-        the layer type is point or line.
-
-        * M value
-        This item can be selected when the layer geometries have m values and
-        the layer type is point or line.
-
     * Altitude Mode
 
         * Absolute
         Altitude is distance above zero-level.
 
-        * Relative to DEM layer
-        Altitude is distance above a DEM surface.
+        * Relative to a DEM layer
+        Altitude is distance above surface of selected DEM.
+
+    * Altitude
+
+        You can use an expression to define altitude of objects above zero-level or
+        surface of selected DEM layer. This means that object altitude can be defined
+        using field values. The unit is that of the map CRS.
+
+        * Expression
+        A numeric value, field or more complex expression (QGIS expressions).
+
+        * Z value / M value
+        Uses z coordinate or m value of each vertex. the evaluated value is added to it.
+
+        These options can be chosen when the layer geometries have z coordinates or m values.
+        Cannot be chosen when the object type is Extruded or Overlay (polygon).
 
 * Style
 
@@ -332,7 +332,7 @@ Common settings for all types:
 
 * Feature
 
-   Select the features to be output.
+   Select the features to be exported.
 
     * All features
 
@@ -362,7 +362,7 @@ Point
 Point layers in the project are listed as the child items. The following
 object types are available:
 
-    Sphere, Cylinder, Cone, Box, Disk
+    Sphere, Cylinder, Cone, Box, Disk, Plane, Model File
 
 See :ref:`object-types-point-layer` section in :doc:`ObjectTypes` page for each object type specific settings.
 
@@ -382,7 +382,7 @@ Polygon
 Polygon layers in the project are listed as the child items. The
 following object types are available:
 
-    Extruded, Overlay
+    Extruded, Overlay, Triangular Mesh
 
 See :ref:`object-types-polygon-layer` section in :doc:`ObjectTypes` page for each object type specific settings.
 
@@ -390,6 +390,7 @@ See :ref:`object-types-polygon-layer` section in :doc:`ObjectTypes` page for eac
 Export to Web Dialog
 --------------------
 
+[TODO: update image]
 .. image:: ./images/export_web.png
 
 * Output directory and HTML Filename
@@ -433,7 +434,7 @@ Export to Web Dialog
 
        * Magnetic North Direction
            Magnetic North direction clockwise from the upper direction of the map,
-           in degrees.
+           in degrees. [TODO]
 
 Exporter Settings
 -----------------
@@ -448,13 +449,5 @@ Exporter Settings
 
 
 * Optional Features
-
-    * DEM Provider
-
-        * GSI Elevation Tile Provider
-
-            This DEM provider downloads GSI elevation tiles from the web server of
-            Geospatial Information Authority of Japan, and provides elevation data to
-            Qgis2threejs. The tile data covers the area of Japan.
 
     See `Plugins <https://github.com/minorua/Qgis2threejs/wiki/Plugins>`__ wiki page for further info.
