@@ -42,8 +42,8 @@ msgstr "|image - Mt. Fuji (Large Area)|"
 
 #: ../../source/Examples.rst:27
 msgid ""
-"**Seto Inland Sea**: Custom plane template. Shaded relief map made with SRTM"
-" data."
+"**Seto Inland Sea**: Custom plane template. Shaded relief map made with SRTM "
+"data."
 msgstr "**瀬戸内海**: カスタム平面テンプレート。SRTMデータで作成された陰影段彩図。"
 
 #: ../../source/Examples.rst:30
@@ -52,8 +52,8 @@ msgstr "|image - Seto Inland Sea|"
 
 #: ../../source/Examples.rst:32
 msgid ""
-"**Mt. Aso**: Polygon overlay, switching layer visibility and adjusting layer"
-" opacity"
+"**Mt. Aso**: Polygon overlay, switching layer visibility and adjusting layer "
+"opacity"
 msgstr "**阿蘇山**: ポリゴンオーバーレイやレイヤの表示・非表示切り替え、レイヤの不透明度の調整"
 
 #: ../../source/Examples.rst:35
@@ -62,7 +62,7 @@ msgstr "|image - Mt. Aso|"
 
 #: ../../source/Examples.rst:6
 msgid "These examples were made with previous plugin versions (1.x)."
-msgstr ""
+msgstr "これらのサンプルは最新のプラグインバージョン(2.x)で作られたものではありません."
 
 #: ../../source/Examples.rst:16
 msgid ""
@@ -72,6 +72,10 @@ msgid ""
 "Filled small voids using `gdal\\_fillnodata.py "
 "<https://www.gdal.org/gdal_fillnodata.html>`__)"
 msgstr ""
+"使用したデータ: アメリカ航空宇宙局(NASA)・アメリカ国家地球空間情報局 (NGA). `SRTM標高データ "
+"<https://www2.jpl.nasa.gov/srtm/cbanddataproducts.html>`__ (SRTM V2.1. "
+"`gdal\\_fillnodata.py <https://www.gdal.org/gdal_fillnodata.html>`__ "
+"を用いて値のない部分を補った)"
 
 #: ../../source/Examples.rst:37
 msgid ""
@@ -81,18 +85,21 @@ msgid ""
 "digital geological map of Japan 1: 200,000 "
 "<https://gbank.gsj.jp/seamless/>`__ |(CC BY-ND 2.1 JP)|"
 msgstr ""
+"使用したデータ: 国土地理院. `地理院タイル <https://maps.gsi.go.jp/development/ichiran.html>`__ "
+"(標準地図, 色別標高図, 標高タイル) / 産業技術総合研究所 地質調査総合センター. `20万分の１日本シームレス地質図 "
+"<https://gbank.gsj.jp/seamless/>`__ |(CC BY-ND 2.1 JP)|"
 
 #~ msgid ""
 #~ "Source: U.S. National Aeronautics and Space Administration (NASA) and "
 #~ "National Geospatial-Intelligence Agency (NGA). `SRTM elevation data "
-#~ "<http://www2.jpl.nasa.gov/srtm/cbanddataproducts.html>`__ (SRTM V2.1. Filled"
-#~ " small voids using `gdal\\_fillnodata.py "
+#~ "<http://www2.jpl.nasa.gov/srtm/cbanddataproducts.html>`__ (SRTM V2.1. "
+#~ "Filled small voids using `gdal\\_fillnodata.py "
 #~ "<http://www.gdal.org/gdal_fillnodata.html>`__)"
 #~ msgstr ""
 #~ "アメリカ航空宇宙局 (NASA)・アメリカ国家地球空間情報局 (NGA)の `SRTM標高データ "
-#~ "<http://www2.jpl.nasa.gov/srtm/cbanddataproducts.html>`__ (SRTM V2.1)を用いて作成。"
-#~ " `gdal\\_fillnodata.py <http://www.gdal.org/gdal_fillnodata.html>`__ "
-#~ "で空隙を埋めた。"
+#~ "<http://www2.jpl.nasa.gov/srtm/cbanddataproducts.html>`__ (SRTM "
+#~ "V2.1)を用いて作成。 `gdal\\_fillnodata.py "
+#~ "<http://www.gdal.org/gdal_fillnodata.html>`__ で空隙を埋めた。"
 
 #~ msgid ""
 #~ "Sources: Geospatial Information Authority of Japan. `GSI Tiles "
@@ -113,20 +120,20 @@ msgstr ""
 
 #~ msgid ""
 #~ "Sources: Geospatial Information Authority of Japan. `GSI Tiles "
-#~ "<http://portal.cyberjapan.jp/help/development/>`__ (Orthophoto and elevation"
-#~ " tile)"
+#~ "<http://portal.cyberjapan.jp/help/development/>`__ (Orthophoto and "
+#~ "elevation tile)"
 #~ msgstr ""
 #~ "国土地理院の `地理院タイル <http://portal.cyberjapan.jp/help/development/>`__ "
 #~ "(写真、標高タイル)を用いて作成。"
 
 #~ msgid ""
-#~ "**Mt. Fuji (With Vector Data)**: This is test data. Shaded relief map made "
-#~ "with SRTM data."
+#~ "**Mt. Fuji (With Vector Data)**: This is test data. Shaded relief map "
+#~ "made with SRTM data."
 #~ msgstr "**富士山 (ベクトルデータ)**: これはテストデータです。SRTMデータで作られた陰影段彩図。"
 
 #~ msgid ""
-#~ "`[Live example] <https://dl.dropboxusercontent.com/u/21526091/qgis-"
-#~ "plugins/samples/Qgis2threejsTest/dat-gui.html>`__"
+#~ "`[Live example] "
+#~ "<https://dl.dropboxusercontent.com/u/21526091/qgis-plugins/samples/Qgis2threejsTest/dat-gui.html>`__"
 #~ msgstr ""
-#~ "`[Live example] <https://dl.dropboxusercontent.com/u/21526091/qgis-"
-#~ "plugins/samples/Qgis2threejsTest/dat-gui.html>`__"
+#~ "`[Live example] "
+#~ "<https://dl.dropboxusercontent.com/u/21526091/qgis-plugins/samples/Qgis2threejsTest/dat-gui.html>`__"
