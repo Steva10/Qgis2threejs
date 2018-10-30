@@ -1,0 +1,916 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Qgis2threejs plugin 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-30 13:58+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/Exporter.rst:2
+msgid "Exporter"
+msgstr ""
+
+#: ../../source/Exporter.rst:4
+msgid "Now being updated for coming Qgis2threejs version 2.2."
+msgstr ""
+
+#: ../../source/Exporter.rst:11 ../../source/Exporter.rst:81
+msgid "Window"
+msgstr ""
+
+#: ../../source/Exporter.rst:13
+msgid ""
+"When the Qgis2threejs exporter window opens first time, `Layers` panel is on"
+" the left side of the window and preview is on the right side."
+msgstr ""
+
+#: ../../source/Exporter.rst:18
+msgid ""
+"In this plugin, the word \"export settings\" means all configuration "
+"settings for a 3D scene, which consist of world settings, camera settings, "
+"each layer settings and so on. You can configure them via `Scene <#scene>`__"
+" menu, `Layers` panel and `Export to Web` dialog."
+msgstr ""
+
+#: ../../source/Exporter.rst:22
+msgid ""
+"In the `Layers` panel, each layer item has a checkbox on its left. Check the"
+" checkbox to add the layer to current scene. To open layer properties dialog"
+" and configure settings for the layer, double-click on the layer item or "
+"click on `Properties` from context menu (right click menu)."
+msgstr ""
+
+#: ../../source/Exporter.rst:26
+msgid ""
+"Export settings are automatically saved to a ``.qto3settings`` file under "
+"the same directory as the project file if you are working with a project "
+"file. When you open the exporter later, the export settings of the project "
+"will be restored."
+msgstr ""
+
+#: ../../source/Exporter.rst:30
+msgid ""
+"If you don't want to use preview, uncheck `Preview` checkbox in the lower "
+"right corner of the window. For example, you might want to uncheck it to "
+"avoid waiting for updating 3D objects in the scene for each export settings "
+"update,"
+msgstr ""
+
+#: ../../source/Exporter.rst:35
+msgid "Menu"
+msgstr ""
+
+#: ../../source/Exporter.rst:38
+msgid "File"
+msgstr ""
+
+#: ../../source/Exporter.rst:41
+msgid "Export to Web..."
+msgstr ""
+
+#: ../../source/Exporter.rst:40
+msgid ""
+"Exports files necessary for publishing current scene to web. See `Export to "
+"Web Dialog <#export-to-web-dialog>`__ section."
+msgstr ""
+
+#: ../../source/Exporter.rst:44
+msgid "Save Scene As - Image (.png)"
+msgstr ""
+
+#: ../../source/Exporter.rst:44
+msgid "Saves rendered scene image to a PNG file."
+msgstr ""
+
+#: ../../source/Exporter.rst:47
+msgid "Save Scene As - glTF (.gltf,.glb)"
+msgstr ""
+
+#: ../../source/Exporter.rst:47
+msgid "Saves 3D model of current scene in glTF format."
+msgstr ""
+
+#: ../../source/Exporter.rst:50
+msgid "Exporter Settings..."
+msgstr ""
+
+#: ../../source/Exporter.rst:50
+msgid ""
+"Opens Exporter Settings dialog. See `Exporter Settings Dialog <#exporter-"
+"settings>`__"
+msgstr ""
+
+#: ../../source/Exporter.rst:53
+msgid "Close Exporter"
+msgstr ""
+
+#: ../../source/Exporter.rst:53
+msgid "Closes Qgis2threejs Exporter."
+msgstr ""
+
+#: ../../source/Exporter.rst:56
+msgid "Scene"
+msgstr ""
+
+#: ../../source/Exporter.rst:59
+msgid "Scene Settings..."
+msgstr ""
+
+#: ../../source/Exporter.rst:59
+msgid ""
+"Opens Scene settings dialog. See `Scene Settings <#scene-settings>`__ "
+"section."
+msgstr ""
+
+#: ../../source/Exporter.rst:62
+msgid "Camera"
+msgstr ""
+
+#: ../../source/Exporter.rst:62
+msgid ""
+"Changes the camera. See `Camera Settings <#camera-settings>`__ section."
+msgstr ""
+
+#: ../../source/Exporter.rst:65
+msgid "Controls"
+msgstr ""
+
+#: ../../source/Exporter.rst:65
+msgid ""
+"Changes the controls. See `Controls Settings <#controls-settings>`__ "
+"section."
+msgstr ""
+
+#: ../../source/Exporter.rst:69
+msgid "Decorations"
+msgstr ""
+
+#: ../../source/Exporter.rst:68
+msgid ""
+"Adds decorations to the view, such as North arrow and footer label. [TODO]"
+msgstr ""
+
+#: ../../source/Exporter.rst:72
+msgid "Clear All Settings"
+msgstr ""
+
+#: ../../source/Exporter.rst:72
+msgid "Clears current export settings."
+msgstr ""
+
+#: ../../source/Exporter.rst:75
+msgid "Reload (F5)"
+msgstr ""
+
+#: ../../source/Exporter.rst:75
+msgid "Reloads current scene."
+msgstr ""
+
+#: ../../source/Exporter.rst:78
+msgid "Reset Camera Position (Shift+R)"
+msgstr ""
+
+#: ../../source/Exporter.rst:78
+msgid ""
+"Returns camera position to initial position and resets its view target to "
+"initial point (3D world origin)."
+msgstr ""
+
+#: ../../source/Exporter.rst:89
+msgid "Panels"
+msgstr ""
+
+#: ../../source/Exporter.rst:83
+msgid "Layers"
+msgstr ""
+
+#: ../../source/Exporter.rst:84 ../../source/Exporter.rst:158
+#: ../../source/Exporter.rst:161 ../../source/Exporter.rst:164
+#: ../../source/Exporter.rst:186 ../../source/Exporter.rst:294
+msgid "[TODO]"
+msgstr ""
+
+#: ../../source/Exporter.rst:89
+msgid "Console"
+msgstr ""
+
+#: ../../source/Exporter.rst:87
+msgid ""
+"Console panel displays information for debugging, mainly JavaScript side "
+"information. Python side debug information is logged to log messages panel "
+"of QGIS window. You can enter and execute JavaScript statements."
+msgstr ""
+
+#: ../../source/Exporter.rst:92
+msgid "Always on Top"
+msgstr ""
+
+#: ../../source/Exporter.rst:92
+msgid "Brings the exporter window to front of all other application windows."
+msgstr ""
+
+#: ../../source/Exporter.rst:95 ../../source/Exporter.rst:97
+msgid "Help"
+msgstr ""
+
+#: ../../source/Exporter.rst:97
+msgid ""
+"Opens the plugin document in default browser. Internet connection is "
+"required."
+msgstr ""
+
+#: ../../source/Exporter.rst:100
+msgid "Plugin Homepage"
+msgstr ""
+
+#: ../../source/Exporter.rst:100
+msgid ""
+"Opens the plugin homepage in default browser. Internet connection is "
+"required."
+msgstr ""
+
+#: ../../source/Exporter.rst:103
+msgid "Send feedback"
+msgstr ""
+
+#: ../../source/Exporter.rst:103
+msgid ""
+"Opens the plugin issue tracking system in default browser. Internet "
+"connection is required."
+msgstr ""
+
+#: ../../source/Exporter.rst:107
+msgid "About Qgis2threejs Plugin"
+msgstr ""
+
+#: ../../source/Exporter.rst:106
+msgid "Displays the plugin version you are using."
+msgstr ""
+
+#: ../../source/Exporter.rst:110
+msgid "Scene Settings"
+msgstr ""
+
+#: ../../source/Exporter.rst:112
+msgid ""
+"Scene settings dialog controls some basic configuration settings for current"
+" scene. Click on ``Scene - Scene Settings...`` menu entry to open the "
+"dialog."
+msgstr ""
+
+#: ../../source/Exporter.rst:117
+msgid "World Coordinates"
+msgstr ""
+
+#: ../../source/Exporter.rst:119
+msgid "Base size (width)"
+msgstr ""
+
+#: ../../source/Exporter.rst:121
+msgid ""
+"Size (width) in 3D world that corresponds to the map canvas width. The "
+"default value is 100."
+msgstr ""
+
+#: ../../source/Exporter.rst:124
+msgid "Vertical exaggeration"
+msgstr ""
+
+#: ../../source/Exporter.rst:126
+msgid ""
+"Vertical exaggeration factor. This value affects terrain shape and z "
+"positions of all vector 3D objects. This also affects 3D object height of "
+"some object types with volume. Object types to be affected:"
+msgstr ""
+
+#: ../../source/Exporter.rst:0
+msgid "Point : Cylinder, Cube, Cone"
+msgstr ""
+
+#: ../../source/Exporter.rst:0
+msgid "Polygon : Extruded"
+msgstr ""
+
+#: ../../source/Exporter.rst:133
+msgid ""
+"3D objects of the following types have volume, but their heights aren't "
+"affected by this factor:"
+msgstr ""
+
+#: ../../source/Exporter.rst:0
+msgid "Point : Sphere"
+msgstr ""
+
+#: ../../source/Exporter.rst:0
+msgid "Line : Pipe, Cone, Box"
+msgstr ""
+
+#: ../../source/Exporter.rst:139
+msgid "The default value is 1.0."
+msgstr ""
+
+#: ../../source/Exporter.rst:141
+msgid "Vertical shift"
+msgstr ""
+
+#: ../../source/Exporter.rst:143
+msgid ""
+"Vertical shift for all objects. If you want to export high altitude and "
+"narrow area, you should adjust the object positions to be displayed at the "
+"center of browser by changing this value. If you set the value to -1000, all"
+" objects are shifted down by 1000 in the unit of map CRS."
+msgstr ""
+
+#: ../../source/Exporter.rst:149 ../../source/Exporter.rst:228
+msgid "Material"
+msgstr ""
+
+#: ../../source/Exporter.rst:151
+msgid "Basic type"
+msgstr ""
+
+#: ../../source/Exporter.rst:153
+msgid ""
+"Material type used for most 3D objects. Select a material type from Lambert "
+"material, Phong material and Toon material. Default is Lambert material."
+msgstr ""
+
+#: ../../source/Exporter.rst:157
+msgid "Lambert material"
+msgstr ""
+
+#: ../../source/Exporter.rst:160
+msgid "Phong material"
+msgstr ""
+
+#: ../../source/Exporter.rst:163
+msgid "Toon material"
+msgstr ""
+
+#: ../../source/Exporter.rst:166
+msgid "Background"
+msgstr ""
+
+#: ../../source/Exporter.rst:168
+msgid ""
+"Select either sky-like gradient or a solid color for the scene background. "
+"Default is Sky."
+msgstr ""
+
+#: ../../source/Exporter.rst:171
+msgid "Display of coordinates"
+msgstr ""
+
+#: ../../source/Exporter.rst:173
+msgid ""
+"If the ``Latitude and longitude (WGS84)`` option is selected, coordinates of"
+" clicked position on a 3D object are displayed in longitude and latitude "
+"(WGS84). If `Proj4js <https://github.com/proj4js/proj4js>`__ doesn't support"
+" current map CRS, this option is disabled."
+msgstr ""
+
+#: ../../source/Exporter.rst:180
+msgid "Camera Settings"
+msgstr ""
+
+#: ../../source/Exporter.rst:183
+msgid "Perspective Camera"
+msgstr ""
+
+#: ../../source/Exporter.rst:183
+msgid "Shows distant objects as smaller."
+msgstr ""
+
+#: ../../source/Exporter.rst:186
+msgid "Orthographic Camera"
+msgstr ""
+
+#: ../../source/Exporter.rst:189
+msgid "Controls Settings"
+msgstr ""
+
+#: ../../source/Exporter.rst:191
+msgid "OrbitControls is available."
+msgstr ""
+
+#: ../../source/Exporter.rst:194
+msgid "Ctrl"
+msgstr ""
+
+#: ../../source/Exporter.rst:194
+msgid "Mouse / Keys"
+msgstr ""
+
+#: ../../source/Exporter.rst:194
+msgid "Touch"
+msgstr ""
+
+#: ../../source/Exporter.rst:196
+msgid "Orbit"
+msgstr ""
+
+#: ../../source/Exporter.rst:196
+msgid "Left mouse"
+msgstr ""
+
+#: ../../source/Exporter.rst:196
+msgid "One-finger move"
+msgstr ""
+
+#: ../../source/Exporter.rst:197
+msgid "Zoom"
+msgstr ""
+
+#: ../../source/Exporter.rst:197
+msgid "Middle mouse, or mousewheel"
+msgstr ""
+
+#: ../../source/Exporter.rst:197
+msgid "Two-finger spread or squish"
+msgstr ""
+
+#: ../../source/Exporter.rst:198
+msgid "Pan"
+msgstr ""
+
+#: ../../source/Exporter.rst:198
+msgid "Right mouse, or left mouse + ctrl/metaKey, or arrow keys"
+msgstr ""
+
+#: ../../source/Exporter.rst:198
+msgid "Two-finger move"
+msgstr ""
+
+#: ../../source/Exporter.rst:202
+msgid "DEM Layer Settings"
+msgstr ""
+
+#: ../../source/Exporter.rst:205
+msgid "Geometry"
+msgstr ""
+
+#: ../../source/Exporter.rst:207
+msgid "Resampling level"
+msgstr ""
+
+#: ../../source/Exporter.rst:209
+msgid ""
+"Select a DEM resolution from several levels. This resolution is used to "
+"resample the DEM, but is not for texture."
+msgstr ""
+
+#: ../../source/Exporter.rst:212
+msgid "Surroundings"
+msgstr ""
+
+#: ../../source/Exporter.rst:214
+msgid ""
+"This option enlarges output DEM by placing DEM blocks around the main block "
+"of the map canvas extent. Size can be selected from odd numbers in the range"
+" of 3 to 9. If you select 3, total 9 (=3x3) blocks (a center block and 8 "
+"surrounding blocks) are output. Roughening can be selected from powers of 2 "
+"in the range of 1 to 64. If you select 2, grid point spacing of each "
+"surrounding block is doubled. It means that the number of grid points in the"
+" same area becomes 1/4."
+msgstr ""
+
+#: ../../source/Exporter.rst:220
+msgid "Clip DEM with polygon layer"
+msgstr ""
+
+#: ../../source/Exporter.rst:222
+msgid ""
+"Clips the DEM with a polygon layer. If you have a polygon layer that "
+"represents the area that elevation data exist or represents drainage basins,"
+" you might want to use this option."
+msgstr ""
+
+#: ../../source/Exporter.rst:230
+msgid "Display type"
+msgstr ""
+
+#: ../../source/Exporter.rst:232
+msgid ""
+"You can choose from map canvas image, layer image, a image file or a solid "
+"color."
+msgstr ""
+
+#: ../../source/Exporter.rst:235
+msgid "Map canvas image"
+msgstr ""
+
+#: ../../source/Exporter.rst:237
+msgid ""
+"Render a texture image with the current map settings for each DEM block."
+msgstr ""
+
+#: ../../source/Exporter.rst:239
+msgid "Layer image"
+msgstr ""
+
+#: ../../source/Exporter.rst:241
+msgid "Render a texture image with the selected layer(s) for each DEM block."
+msgstr ""
+
+#: ../../source/Exporter.rst:243
+msgid "Image file"
+msgstr ""
+
+#: ../../source/Exporter.rst:245
+msgid ""
+"Textures the main DEM block with existing image file such as PNG file and "
+"JPEG file. TIFF is not supported by some browser. See `Image format support "
+"<https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support>`__"
+" for details."
+msgstr ""
+
+#: ../../source/Exporter.rst:250
+msgid "Solid color"
+msgstr ""
+
+#: ../../source/Exporter.rst:252
+msgid "To select a color, press the button on the right side."
+msgstr ""
+
+#: ../../source/Exporter.rst:254
+msgid "Resolution"
+msgstr ""
+
+#: ../../source/Exporter.rst:256
+msgid ""
+"Increases the size of image applied to each DEM block. This option is "
+"enabled when either ``Map canvas image`` or ``Layer image`` is selected. You"
+" can select a ratio to map canvas size from 100, 200 and 400 (%). Image size"
+" in pixels follows the percent."
+msgstr ""
+
+#: ../../source/Exporter.rst:260
+msgid "Opaciy"
+msgstr ""
+
+#: ../../source/Exporter.rst:262
+msgid "Sets opacity of DEM object. 100 is opaque, and 0 is transparent."
+msgstr ""
+
+#: ../../source/Exporter.rst:264
+msgid "Transparent background (With map canvas image or layer image)"
+msgstr ""
+
+#: ../../source/Exporter.rst:266
+msgid "Makes image background transparent."
+msgstr ""
+
+#: ../../source/Exporter.rst:268
+msgid "Enable transparency (With image file)"
+msgstr ""
+
+#: ../../source/Exporter.rst:270
+msgid "Enables image transparency."
+msgstr ""
+
+#: ../../source/Exporter.rst:272
+msgid "Enable shading"
+msgstr ""
+
+#: ../../source/Exporter.rst:274
+msgid "Adds a shading effect to DEM surface."
+msgstr ""
+
+#: ../../source/Exporter.rst:278
+msgid "Other Options"
+msgstr ""
+
+#: ../../source/Exporter.rst:280
+msgid "Build sides"
+msgstr ""
+
+#: ../../source/Exporter.rst:282
+msgid ""
+"This option adds sides and bottom to each DEM block. The z position of "
+"bottom in the 3D world is fixed. You can adjust the height of sides by "
+"changing the value of vertical shift option in the World panel. If you want "
+"to change color, edit the output JS file directly."
+msgstr ""
+
+#: ../../source/Exporter.rst:287
+msgid "Build frame"
+msgstr ""
+
+#: ../../source/Exporter.rst:289
+msgid ""
+"This option adds frame to the DEM. If you want to change color, edit the "
+"output JS file directly."
+msgstr ""
+
+#: ../../source/Exporter.rst:292
+msgid "Visible on Load"
+msgstr ""
+
+#: ../../source/Exporter.rst:297
+msgid "Vector Layer Settings"
+msgstr ""
+
+#: ../../source/Exporter.rst:299
+msgid ""
+"Vector layers are grouped into three types: Point, Line and Polygon. Common "
+"settings for all types:"
+msgstr ""
+
+#: ../../source/Exporter.rst:302
+msgid "Z coordinate"
+msgstr ""
+
+#: ../../source/Exporter.rst:304
+msgid "Altitude Mode"
+msgstr ""
+
+#: ../../source/Exporter.rst:306
+msgid "Absolute"
+msgstr ""
+
+#: ../../source/Exporter.rst:307
+msgid "Altitude is distance above zero-level."
+msgstr ""
+
+#: ../../source/Exporter.rst:309
+msgid "Relative to a DEM layer"
+msgstr ""
+
+#: ../../source/Exporter.rst:310
+msgid "Altitude is distance above surface of selected DEM."
+msgstr ""
+
+#: ../../source/Exporter.rst:312
+msgid "Altitude"
+msgstr ""
+
+#: ../../source/Exporter.rst:314
+msgid ""
+"You can use an expression to define altitude of objects above zero-level or "
+"surface of selected DEM layer. This means that object altitude can be "
+"defined using field values. The unit is that of the map CRS."
+msgstr ""
+
+#: ../../source/Exporter.rst:318
+msgid "Expression"
+msgstr ""
+
+#: ../../source/Exporter.rst:319
+msgid "A numeric value, field or more complex expression (QGIS expressions)."
+msgstr ""
+
+#: ../../source/Exporter.rst:321
+msgid "Z value / M value"
+msgstr ""
+
+#: ../../source/Exporter.rst:322
+msgid ""
+"Uses z coordinate or m value of each vertex. the evaluated value is added to"
+" it."
+msgstr ""
+
+#: ../../source/Exporter.rst:324
+msgid ""
+"These options can be chosen when the layer geometries have z coordinates or "
+"m values. Cannot be chosen when the object type is Extruded or Overlay "
+"(polygon)."
+msgstr ""
+
+#: ../../source/Exporter.rst:327
+msgid "Style"
+msgstr ""
+
+#: ../../source/Exporter.rst:329
+msgid ""
+"Usually, there are options to set object color and transparency. Refer to "
+"the links below for each object type specific settings. The unit of value "
+"for object size is that of the map CRS."
+msgstr ""
+
+#: ../../source/Exporter.rst:333
+msgid "Feature"
+msgstr ""
+
+#: ../../source/Exporter.rst:335
+msgid "Select the features to be exported."
+msgstr ""
+
+#: ../../source/Exporter.rst:337
+msgid "All features"
+msgstr ""
+
+#: ../../source/Exporter.rst:339
+msgid "All features of the layer are exported."
+msgstr ""
+
+#: ../../source/Exporter.rst:341
+msgid "Features that intersect with map canvas extent"
+msgstr ""
+
+#: ../../source/Exporter.rst:343
+msgid "Features on the map canvas are exported."
+msgstr ""
+
+#: ../../source/Exporter.rst:345
+msgid "Clip geometries"
+msgstr ""
+
+#: ../../source/Exporter.rst:347
+msgid ""
+"This option is available with Line/Polygon layer. If checked, geometries are"
+" clipped by the extent of map canvas."
+msgstr ""
+
+#: ../../source/Exporter.rst:349
+msgid "Attribute and label"
+msgstr ""
+
+#: ../../source/Exporter.rst:351
+msgid ""
+"If the export attributes option is checked, attributes are exported with "
+"feature geometries. Attributes are displayed when you click an object on web"
+" browser."
+msgstr ""
+
+#: ../../source/Exporter.rst:355
+msgid ""
+"If a field is selected in the label combobox, a label is displayed above "
+"each object and is connected to the object with a line. This combo box is "
+"not available when layer type is line."
+msgstr ""
+
+#: ../../source/Exporter.rst:360
+msgid "Point"
+msgstr ""
+
+#: ../../source/Exporter.rst:362
+msgid ""
+"Point layers in the project are listed as the child items. The following "
+"object types are available:"
+msgstr ""
+
+#: ../../source/Exporter.rst:365
+msgid "Sphere, Cylinder, Cone, Box, Disk, Plane, Model File"
+msgstr ""
+
+#: ../../source/Exporter.rst:367
+msgid ""
+"See :ref:`object-types-point-layer` section in :doc:`ObjectTypes` page for "
+"each object type specific settings."
+msgstr ""
+
+#: ../../source/Exporter.rst:370
+msgid "Line"
+msgstr ""
+
+#: ../../source/Exporter.rst:372
+msgid ""
+"Line layers in the project are listed as the child items. The following "
+"object types are available:"
+msgstr ""
+
+#: ../../source/Exporter.rst:375
+msgid "Line, Pipe, Cone, Box, Profile"
+msgstr ""
+
+#: ../../source/Exporter.rst:377
+msgid ""
+"See :ref:`object-types-line-layer` section in :doc:`ObjectTypes` page for "
+"each object type specific settings."
+msgstr ""
+
+#: ../../source/Exporter.rst:380
+msgid "Polygon"
+msgstr ""
+
+#: ../../source/Exporter.rst:382
+msgid ""
+"Polygon layers in the project are listed as the child items. The following "
+"object types are available:"
+msgstr ""
+
+#: ../../source/Exporter.rst:385
+msgid "Extruded, Overlay, Triangular Mesh"
+msgstr ""
+
+#: ../../source/Exporter.rst:387
+msgid ""
+"See :ref:`object-types-polygon-layer` section in :doc:`ObjectTypes` page for"
+" each object type specific settings."
+msgstr ""
+
+#: ../../source/Exporter.rst:391
+msgid "Export to Web Dialog"
+msgstr ""
+
+#: ../../source/Exporter.rst:393
+msgid "[TODO: update image] .. image:: ./images/export_web.png"
+msgstr ""
+
+#: ../../source/Exporter.rst:396
+msgid "Output directory and HTML Filename"
+msgstr ""
+
+#: ../../source/Exporter.rst:398
+msgid ""
+"Select output HTML file path. Usually, a js file with the same file title "
+"that contains whole data of geometries and images is output into the same "
+"directory, and some JavaScript library files are copied into the directory. "
+"Leave this empty to output into temporary directory. Temporary files are "
+"removed when you close the QGIS application."
+msgstr ""
+
+#: ../../source/Exporter.rst:405
+msgid "Export button"
+msgstr ""
+
+#: ../../source/Exporter.rst:407
+msgid ""
+"Exporting starts when you press the Export button. When the exporting has "
+"been done and `Open exported page in web browser` option is checked, the "
+"exported page is opened in default web browser (or a web browser specified "
+"in `Exporter Settings <#exporter-settings>`__)."
+msgstr ""
+
+#: ../../source/Exporter.rst:412
+msgid "Template"
+msgstr ""
+
+#: ../../source/Exporter.rst:414
+msgid "Select a template from available templates:"
+msgstr ""
+
+#: ../../source/Exporter.rst:416
+msgid "3DViewer"
+msgstr ""
+
+#: ../../source/Exporter.rst:418
+msgid "This template is a 3D viewer without any additional UI library."
+msgstr ""
+
+#: ../../source/Exporter.rst:420
+msgid "3DViewer(dat-gui)"
+msgstr ""
+
+#: ../../source/Exporter.rst:422
+msgid ""
+"This template has a `dat-gui <https://code.google.com/p/dat-gui/>`__ panel, "
+"which makes it possible to toggle layer visibility, adjust layer opacity and"
+" add a horizontal plane movable in the vertical direction."
+msgstr ""
+
+#: ../../source/Exporter.rst:426
+msgid "Mobile"
+msgstr ""
+
+#: ../../source/Exporter.rst:428
+msgid ""
+"This is a template for mobile devices, which has mobile friendly GUI, device"
+" orientation controls and AR feature. In order to use the AR feature (Camera"
+" and GPS), you need to upload exported files to a web server supporting SSL."
+msgstr ""
+
+#: ../../source/Exporter.rst:433
+msgid "Option"
+msgstr ""
+
+#: ../../source/Exporter.rst:437
+msgid "Magnetic North Direction"
+msgstr ""
+
+#: ../../source/Exporter.rst:436
+msgid ""
+"Magnetic North direction clockwise from the upper direction of the map, in "
+"degrees. [TODO]"
+msgstr ""
+
+#: ../../source/Exporter.rst:440
+msgid "Exporter Settings"
+msgstr ""
+
+#: ../../source/Exporter.rst:444
+msgid "Web browser path"
+msgstr ""
+
+#: ../../source/Exporter.rst:446
+msgid ""
+"If you want to open web page exported from the exporter with a web browser "
+"other than the default browser, enter the web browser path in this input "
+"box. See `Browser Support <https://github.com/minorua/Qgis2threejs/wiki"
+"/Browser-Support>`__ wiki page."
+msgstr ""
+
+#: ../../source/Exporter.rst:451
+msgid "Optional Features"
+msgstr ""
+
+#: ../../source/Exporter.rst:453
+msgid ""
+"See `Plugins <https://github.com/minorua/Qgis2threejs/wiki/Plugins>`__ wiki "
+"page for further info."
+msgstr ""
